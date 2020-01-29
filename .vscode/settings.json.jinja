@@ -1,33 +1,19 @@
 {
   "editor.formatOnSave": true,
+  "python.autoComplete.extraPaths": ["${workspaceRoot}/odoo/custom/src/odoo"],
   "python.formatting.blackArgs": [],
   "python.formatting.provider": "black",
   "python.linting.flake8Enabled": true,
-  "python.linting.pylintEnabled": true,
+  "python.linting.ignorePatterns": ["${workspaceRoot}/odoo/custom/src/odoo"],
+  "python.pythonPath": "python{% if odoo_version < 11 %}2{% else %}3{% endif %}",
   "python.linting.pylintArgs": [
     "--init-hook=\"import sys;sys.path.append('${workspaceRoot}/odoo/custom/src/odoo')\"",
     "--load-plugins=pylint_odoo"
   ],
-  "python.pythonPath": ".venv/bin/python",
+  "python.linting.pylintEnabled": true,
   "restructuredtext.confPath": "",
   "search.followSymlinks": false,
-
-  // To allow easy shared pipenv development
-  "terminal.integrated.shell.linux": "pipenv",
-  "terminal.integrated.shellArgs.linux": ["shell"],
-  "terminal.integrated.env.linux": {
-    "PIPENV_VENV_IN_PROJECT": "1"
-  },
-  "terminal.integrated.shell.osx": "pipenv",
-  "terminal.integrated.shellArgs.osx": ["shell"],
-  "terminal.integrated.env.osx": {
-    "PIPENV_VENV_IN_PROJECT": "1"
-  },
-  "terminal.integrated.shell.windows": "pipenv",
-  "terminal.integrated.shellArgs.windows": ["shell"],
-  "terminal.integrated.env.windows": {
-    "PIPENV_VENV_IN_PROJECT": "1"
-  },
+  "search.useIgnoreFiles": false,
 
   // Language-specific configurations
   "[python]": {

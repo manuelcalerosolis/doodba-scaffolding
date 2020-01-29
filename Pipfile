@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "==19.10b0"
+copier = {git = "https://github.com/pykong/copier.git"}
+flake8 = "*"
+pylint-odoo = "*"
+
+[packages]
+
+[requires]
+python_version = "3"
+
+[pipenv]

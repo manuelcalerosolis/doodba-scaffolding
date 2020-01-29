@@ -1,0 +1,12 @@
+# Changes here will be overwritten by Copier
+_is_doodba: true
+{{
+  _copier_answers
+  |rejectattr("backup_aws_access_key_id", "defined")
+  |rejectattr("backup_aws_secret_access_key", "defined")
+  |rejectattr("backup_passphrase", "defined")
+  |rejectattr("odoo_admin_password", "defined")
+  |rejectattr("postgres_password", "defined")
+  |rejectattr("smtp_relay_password", "defined")
+  |to_nice_yaml
+ }}
