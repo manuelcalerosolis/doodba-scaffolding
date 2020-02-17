@@ -1,1 +1,4 @@
-partner-contact: ["*"]
+social: ["*"]
+project: ["*"]
+timesheet: ["*"]
+credit-control: ["*"]
