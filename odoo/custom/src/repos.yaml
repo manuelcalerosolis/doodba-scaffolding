@@ -23,8 +23,8 @@ timesheet:
     target: origin $ODOO_VERSION
     merges:
         - origin $ODOO_VERSION
-        - origin refs/pull/315/head
-        - origin refs/pull/319/head
+        - origin refs/pull/319/head # https://github.com/OCA/timesheet/pull/319
+        - origin refs/pull/323/head # https://github.com/OCA/timesheet/pull/323
 web:
     defaults:
         depth: $DEPTH_MERGE
@@ -33,4 +33,4 @@ web:
     target: origin $ODOO_VERSION
     merges:
         - origin $ODOO_VERSION
-        - origin refs/pull/1533/head
+        - origin refs/pull/1533/head # https://github.com/OCA/web/pull/1533
