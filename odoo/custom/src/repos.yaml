@@ -15,7 +15,16 @@
         - ocb $ODOO_VERSION
         # Example of a merge of the PR with the number <PR>
         # - oca refs/pull/<PR>/head
-timesheet:
+project:
+    defaults:
+        depth: $DEPTH_MERGE
+    remotes:
+        origin: https://github.com/OCA/project.git
+    target: origin $ODOO_VERSION
+    merges:
+        - origin $ODOO_VERSION
+        - origin refs/pull/647/head # https://github.com/OCA/project/pull/647
+timesheet-agregate:
     defaults:
         depth: $DEPTH_MERGE
     remotes:
